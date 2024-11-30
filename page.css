@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+/* Style for the body element */
+body{
+    background-color:#47663B;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+/* Container styles */
+.container{
+    width: 80%;
+    background-color: #E8ECD7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* h1 styles */
+h1{
+    text-align: center;
+}
+/* Table styles */
+table{
+    width: 95%;
+    margin: 10px;
+    border-spacing: 5px;
+    text-align: center;
+}
+/* Table header styles */
+table thead{
+    background-color: #607857;
+    border-radius: 20px;
+    color: white;
+}
+/* Table body styles */
+table tbody{
+    background-color: rgb(240, 224, 189);
+}
+/* Hover effect for table cells */
+table td:hover{
+    background-color: #f8ebdb;
+}
+/* Table cell and header styles */
+table td,th{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;   
+}
+/* Media query for medium screens */
+@media (min-width:650px) and (max-width:1000px){
+    .container{
+        width: 90%;
+    }
+    table{
+        border-spacing: 2px;
+        height: 450px;
+        font-size: 10px;
+    }
+    table td,th{
+        font-size: 12px;
+    }
+}
+/* Media query for small screens */
+@media (min-width:100px) and (max-width:650px){
+    .container{
+        width: 90%;
+    }
+    table{
+        width: 470px;
+        margin: 5px;
+        border-spacing: 2px;
+    }
+    table td,th{
+        font-size: 8px;
+        padding: 3px;
+        margin: 4px; 
+    }
+}
